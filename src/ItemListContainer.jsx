@@ -16,7 +16,7 @@ export const ItemListContainer = () => {
     const fetchData = async () => {
       let queryResult;
       if (idCategoria) {
-        const queryFilter = query(queryCollection, where("categoria", "==", idCategoria))
+        const queryFilter = query(queryCollection, where("Categoria", "==", idCategoria))
         queryResult = await getDocs(queryFilter)
       } else {
         queryResult = await getDocs(queryCollection)
