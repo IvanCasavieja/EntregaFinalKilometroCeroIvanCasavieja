@@ -48,7 +48,7 @@ export const ItemListContainer = () => {
       </ul>
       <div className='contenedorProductos'>
         {loading ? (
-          <img className='loading' src="/public/progress.gif" alt="Imagen de carga" />
+          <img src="https://codigofuente.io/wp-content/uploads/2018/09/progress.gif" alt="Imagen de carga" />
         ) : (
           data.map(productoData => {
             return <ItemList key={productoData.id} data={productoData} />;
