@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { CartContext } from './context/CartContext';
+import "./styles/cart.css"
 import { Link } from 'react-router-dom';
 
 export const Cart = () => {
@@ -31,7 +32,7 @@ export const Cart = () => {
                             </tr>
                             {cart.map(item => (
                                 <tr key={item.id}>
-                                    <td><img src={item.Imagen} alt={item.Nombre} /></td>
+                                    <td><img className='imagen' src={item.Imagen} alt={item.Nombre} /></td>
                                     <td>{item.Nombre}</td>
                                     <td>${item.Precio}</td>
                                     <td>{item.quantity}</td>
